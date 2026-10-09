@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ира Помеленок — дизайнер</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Geologica:wght@300;400&family=IBM+Plex+Sans:wght@400;600&display=swap">
+    <style>
+        :root {
+            --bg: #16191D;
+            --text: #E8E6E1;
+            --text-soft: #A4A9B0;
+            --accent: #E2A15B;
+            --line: #2E3339;
+
+            color-scheme: dark;
+
+            --font-heading: "Geologica", "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+            --font-text: "IBM Plex Sans", "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+            --space-2: 2rem;
+            --space-3: 3rem;
+            --space-6: 6rem;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--font-text);
+            font-size: 1.0625rem;
+            line-height: 1.6;
+        }
+
+        .wrap {
+            max-width: 40rem;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        h1 {
+            font-family: var(--font-heading);
+            font-weight: 400;
+            font-size: clamp(2rem, 10vw, 3.5rem);
+            overflow-wrap: anywhere;
+            line-height: 1.1;
+            margin: 0 0 1rem;
+            text-wrap: balance;
+        }
+
+        header {
+            padding: var(--space-3) 0 var(--space-2);
+        }
+
+        header p {
+            text-wrap: balance;
+        }
+
+        h2 {
+            font-family: var(--font-heading);
+            font-weight: 400;
+            font-size: 1.5rem;
+            line-height: 1.2;
+            margin: 0 0 1rem;
+        }
+
+        section {
+            padding: var(--space-2) 0;
+        }
+
+        footer {
+            padding: 0 0 4rem;
+        }
+
+        footer .wrap::before {
+            content: "";
+            display: block;
+            border-top: 1px solid var(--line);
+            margin-top: var(--space-2);
+            margin-bottom: var(--space-2);
+        }
+
+        .contacts {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0 2rem;
+            margin-top: 1.5rem;
+        }
+
+        .contacts p {
+            margin: 0;
+            overflow-wrap: anywhere;
+        }
+
+        .contacts a {
+            display: inline-block;
+            padding: 0.6rem 0;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            list-style: decimal-leading-zero inside;
+            padding: 0;
+            margin: 0;
+        }
+
+        .services li {
+            border: 1px solid var(--line);
+            padding: 1rem;
+        }
+
+        .services li::marker {
+            color: var(--accent);
+            font-family: var(--font-heading);
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration-color: var(--text-soft);
+            text-underline-offset: 0.2em;
+        }
+
+        a:hover {
+            text-decoration-color: var(--accent);
+        }
+
+        a:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 3px;
+        }
+
+        @media (min-width: 30rem) {
+            header {
+                padding: var(--space-6) 0 var(--space-2);
+            }
+
+            header p {
+                font-size: 1.25rem;
+            }
+
+            section {
+                padding: var(--space-3) 0;
+            }
+
+            .services li {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="wrap">
+            <h1>Ира Помеленок</h1>
+            <p>Проектирую мобильные приложения, которые упрощают повседневные задачи.</p>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="wrap">
+                <h2>Что я делаю</h2>
+                <ol class="services">
+                    <li>Разбираюсь, что на самом деле нужно вашим пользователям, прежде чем рисовать экраны</li>
+                    <li>Использую AI, чтобы быстрее показать вам несколько вариантов и проверить идеи</li>
+                    <li>Создаю визуальный дизайн на основе логики и пользовательских сценариев, поэтому интерфейс не
+                        только красивый, но и понятный</li>
+                </ol>
+            </div>
+        </section>
+
+        <section>
+            <div class="wrap">
+                <h2>Мой подход</h2>
+                <p>Вы всегда знаете, что происходит с проектом и что будет дальше. Работаю без сюрпризов — сроки и объём
+                    правок фиксируем в начале. Если задача не моя, скажу сразу и подскажу, к кому обратиться.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="wrap">
+            <h2>Контакты</h2>
+            <p>Расскажите о задаче в паре предложений. Даже если пока не уверены, что нужно, разберёмся вместе.</p>
+            <div class="contacts">
+                <p>Почта: <a href="mailto:pomelenokia@gmail.com">pomelenokia@gmail.com</a></p>
+                <p>Telegram: <a href="https://t.me/unicornishrex">@unicornishrex</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
